@@ -1,0 +1,16 @@
+struct TrackPosition{
+	float x;
+	float y;	
+	float z;
+};
+
+enum TrackClassification {AIR, SURFACE, LAND};
+
+struct RadarInfo{
+	long radarID; 	//@key
+	long trackID;	//@key
+	TrackPosition position;
+	TrackClassification classification;
+};
+
+	
