@@ -53,6 +53,7 @@ void publisher_main(int domain_id, int sample_count)
 		{
 			writer.dispose_instance(writer.lookup_instance(sample1));
 			std::cout << std::endl << "Disposed of sample1... ";
+			//GS - dispose of INSTANCE. not a sample.
 		}
 		//Reminder: at cycle 24 track1 is re-discovered.
 
